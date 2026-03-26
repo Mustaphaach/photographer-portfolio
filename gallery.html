@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Rhys Photography Gallery — wildlife, animals, nature, landscapes, macro, street."/>
+  <title>Gallery | Rhys Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      R<span class="logo-dot">·</span>Photography
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><span>01</span>Home</a></li>
+      <li><a href="gallery.html" class="active"><span>02</span>Gallery</a></li>
+      <li><a href="about.html"><span>03</span>About</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='contact.html'">Book a Session</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1600&q=85')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow reveal-up">Portfolio</p>
+      <h1 class="page-hero-title reveal-up">The <em>Gallery</em></h1>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="filters reveal-up">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="landscape">Landscapes</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="macro">Macro</button>
+      <button class="filter-btn" data-filter="street">Street</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery">
+
+      <a href="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="wildlife" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=700&q=85" alt="Fox at Dawn" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Wildlife — Fox at Dawn</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="landscape" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85" alt="Mountain Peaks" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Landscape — Mountain Peaks</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=700&q=85" alt="Pack Life" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Pack Life</span></div>
+      </a>
+         <a href="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://i.postimg.cc/02Z31SLV/image-(3).webp" alt="Pack Life" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Pack Life</span></div>
+      </a>
+           <a href="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://i.postimg.cc/wB5LnXry/image-(4).webp" alt="Pack Life" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Pack Life</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/c4tY0Bnc/IMG-9291.webp" alt="City Pulse" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — City cars</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1504173010664-32509107de5f?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="nature" class="gallery-item">
+        <img src="https://i.postimg.cc/JzLhvfCp/image-(2).webp" alt="Into the Forest" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Nature — Into the Forest</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="landscape" class="gallery-item">
+        <img src="https://i.postimg.cc/brk65D1k/IMG-9179.webp" alt="Golden Hour" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Landscape — The Moon</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="wildlife" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=700&q=85" alt="Sea Turtle" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Wildlife — Sea Turtle</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1551085254-e96b210db58a?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="macro" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?w=700&q=85" alt="Hidden Details" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Macro — Hidden Details</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=700&q=85" alt="Prairie Dogs" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Prairie Dogs</span></div>
+      </a>
+ <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/6qZM2234/image-(8).webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="nature" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=85" alt="Ancient Forest" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Nature — Ancient Forest</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="landscape" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=700&q=85" alt="Dawn Light" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Landscape — Dawn Light</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/8cyLCTdm/IMG-9423.webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="macro" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=700&q=85" alt="Snowflake" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Macro — Snowflake</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="landscape" class="gallery-item">
+        <img src="https://i.postimg.cc/GhykRn8J/IMG-2752.webp" alt="Dawn Light" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Landscape — Dawn Light</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="wildlife" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=700&q=85" alt="Lion King" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Wildlife — Lion King</span></div>
+      </a>
+        <a href="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://i.postimg.cc/Y9549jTr/image-(5).webp" alt="Pack Life" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Pack Life</span></div>
+      </a>
+        <a href="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="landscape" class="gallery-item">
+        <img src="https://i.postimg.cc/C1sQmfY1/IMG-2755.webp" alt="Dawn Light" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Landscape — Dawn Light</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/W1336MG0/Image.webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://i.postimg.cc/9FMMhdD9/image-(9).webp" alt="Prairie Dogs" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Prairie Dogs</span></div>
+      </a>
+      
+      <a href="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="macro" class="gallery-item">
+        <img src="https://i.postimg.cc/wxbt348r/IMG-9151.webp" alt="Snowflake" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Macro — Snowflake</span></div>
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/d31XSt4f/Image-(1).webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+        <a href="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="animals" class="gallery-item">
+        <img src="https://i.postimg.cc/dVkzR1fM/image-(6).webp" alt="Pack Life" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Animals — Pack Life</span></div>
+      </a>
+       <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/7YGk9mCQ/IMG-9315.webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+<a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/vHFsP55C/IMG-9362.webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/jjCmqjzz/IMG-9399.webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="macro" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=700&q=85" alt="Petal Detail" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Macro — Petal Detail</span></div>
+      </a>
+       <a href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1400" data-pswp-width="1400" data-pswp-height="933" data-category="street" class="gallery-item">
+        <img src="https://i.postimg.cc/mDXw63cH/image-(7).webp" alt="In Motion" loading="lazy"/>
+        <div class="gallery-item-overlay"><span>Street — In Motion</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Rhys Photography</div>
+        <p>Based in the Wild · Available Worldwide</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Rhys Photography. All rights reserved.</p>
+      <p>Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a.gallery-item',
+      pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js'),
+      padding: { top: 20, bottom: 20, left: 20, right: 20 }
+    });
+    lightbox.init();
+  </script>
+</body>
+</html>

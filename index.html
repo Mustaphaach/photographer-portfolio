@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Rhys — Nature & Wildlife Photographer capturing the raw beauty of animals, landscapes, and the world around us."/>
+  <title>Rhys Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="loading">
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">Rhys</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      R<span class="logo-dot">·</span>Photography
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active"><span>01</span>Home</a></li>
+      <li><a href="gallery.html"><span>02</span>Gallery</a></li>
+      <li><a href="about.html"><span>03</span>About</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='contact.html'">Book a Session</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+ <section class="hero" id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1800&q=90')"></div>
+      <div class="hero-slide" style="background-image:url('https://i.postimg.cc/c4tY0Bnc/IMG-9291.webp')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1800&q=90')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Nature &amp; Wildlife Photographer</p>
+      <h1 class="hero-title">
+        <em>The world is wild</em>
+        <span class="hero-title-line2">I capture it</span>
+      </h1>
+      <p class="hero-desc">Animals · Nature · Landscapes · Street · Macro</p>
+      <div class="hero-actions">
+        <a href="gallery.html" class="btn btn-primary">Explore Gallery</a>
+        <a href="contact.html" class="btn btn-ghost">Work With Rhys</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-stat"><strong>4+</strong><span>Years</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong>100+</strong><span>Projects</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong>5+</strong><span>Countries</span></div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-wheel"></div>
+      <span>Scroll to explore</span>
+    </div>
+    <div class="slide-indicators" id="slide-indicators">
+      <button class="slide-dot active" data-index="0"></button>
+      <button class="slide-dot" data-index="1"></button>
+      <button class="slide-dot" data-index="2"></button>
+    </div>
+</section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Wildlife</span><span class="sep">✦</span>
+      <span>Nature</span><span class="sep">✦</span>
+      <span>Animals</span><span class="sep">✦</span>
+      <span>Macro</span><span class="sep">✦</span>
+      <span>Underwater</span><span class="sep">✦</span>
+      <span>Aerial</span><span class="sep">✦</span>
+      <span>Landscapes</span><span class="sep">✦</span>
+      <span>Street</span><span class="sep">✦</span>
+      <span>Editorial</span><span class="sep">✦</span>
+      <span>Fine Art</span><span class="sep">✦</span>
+      <span>Wildlife</span><span class="sep">✦</span>
+      <span>Nature</span><span class="sep">✦</span>
+      <span>Animals</span><span class="sep">✦</span>
+      <span>Macro</span><span class="sep">✦</span>
+      <span>Underwater</span><span class="sep">✦</span>
+      <span>Aerial</span><span class="sep">✦</span>
+      <span>Landscapes</span><span class="sep">✦</span>
+      <span>Street</span><span class="sep">✦</span>
+      <span>Editorial</span><span class="sep">✦</span>
+      <span>Fine Art</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- FEATURED WORK -->
+  <section class="featured" id="featured">
+    <div class="featured-header">
+      <div class="section-label reveal-up">Featured Work</div>
+      <h2 class="section-title reveal-up">Selected <em>Captures</em></h2>
+    </div>
+    <div class="bento-grid reveal-up">
+      <div class="bento-item bento-tall" data-tilt>
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=900&q=85" alt="Wildlife" loading="lazy"/>
+        <div class="bento-info">
+          <span class="bento-cat">Wildlife</span>
+          <h3>Eyes of the Wild</h3>
+          <a href="gallery.html" class="bento-link">View Series →</a>
+        </div>
+      </div>
+      <div class="bento-item" data-tilt>
+        <img src="https://i.postimg.cc/brk65D1k/IMG-9179.webp" alt="Landscape" loading="lazy"/>
+        <div class="bento-info">
+          <span class="bento-cat">Landscapes</span>
+          <h3>Vast &amp; Quiet</h3>
+          <a href="gallery.html" class="bento-link">View Series →</a>
+        </div>
+      </div>
+      <div class="bento-item" data-tilt>
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=700&q=85" alt="Animals" loading="lazy"/>
+        <div class="bento-info">
+          <span class="bento-cat">Animals</span>
+          <h3>Wild Companions</h3>
+          <a href="gallery.html" class="bento-link">View Series →</a>
+        </div>
+      </div>
+      <div class="bento-item bento-wide" data-tilt>
+        <img src="https://i.postimg.cc/JzLhvfCp/image-(2).webp" alt="Nature" loading="lazy"/>
+        <div class="bento-info">
+          <span class="bento-cat">Nature</span>
+          <h3>Into the Forest</h3>
+          <a href="gallery.html" class="bento-link">View Series →</a>
+        </div>
+      </div>
+    </div>
+    <div class="featured-cta reveal-up">
+      <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="services-bg-text">Services</div>
+    <div class="services-inner">
+      <div class="section-label reveal-up">What I Offer</div>
+      <h2 class="section-title reveal-up">How We Can <em>Work Together</em></h2>
+      <div class="services-list">
+        <div class="service-row reveal-up">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3>Wildlife &amp; Animal Photography</h3>
+            <p>In-the-field wildlife shoots — safaris, forests, coasts, or your backyard. Every creature has a story.</p>
+          </div>
+          <div class="service-price">From $250</div>
+          <a href="contact.html" class="service-arrow">→</a>
+        </div>
+        <div class="service-row reveal-up">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>Landscape &amp; Nature</h3>
+            <p>Fine art landscape prints and licensed nature photography for editorial or commercial use worldwide.</p>
+          </div>
+          <div class="service-price">From $200</div>
+          <a href="contact.html" class="service-arrow">→</a>
+        </div>
+        <div class="service-row reveal-up">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3>Macro Photography</h3>
+            <p>The invisible world made visible — insects, plants, textures, and micro details in stunning resolution.</p>
+          </div>
+          <div class="service-price">From $180</div>
+          <a href="contact.html" class="service-arrow">→</a>
+        </div>
+        <div class="service-row reveal-up">
+          <div class="service-num">04</div>
+          <div class="service-body">
+            <h3>Editorial &amp; Campaigns</h3>
+            <p>Nature and conservation campaigns, magazine spreads, and documentary-style photography projects.</p>
+          </div>
+          <div class="service-price">Custom</div>
+          <a href="contact.html" class="service-arrow">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-label reveal-up">Client Words</div>
+    <h2 class="section-title reveal-up">Trusted by <em>Many</em></h2>
+    <div class="testimonials-track" id="testimonials-track">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p>"Rhys captured our wildlife reserve in ways we never imagined. The shots are used across all our campaigns."</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Tom"/>
+          <div><strong>Tom W.</strong><span>Wildlife Reserve Director</span></div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p>"The macro series Rhys shot for our botanical magazine cover was breathtaking. Absolute genius with a lens."</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Amara"/>
+          <div><strong>Amara S.</strong><span>Magazine Editor</span></div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p>"Hired Rhys for a 3-week nature expedition through Patagonia. Every single frame was stunning and publication-ready."</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=80&q=80" alt="Lena"/>
+          <div><strong>Lena M.</strong><span>Documentary Producer</span></div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p>"Rhys has unmatched patience and instinct in the field. He caught a snow leopard on camera — on the first day!"</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80" alt="Yusuf"/>
+          <div><strong>Yusuf A.</strong><span>Conservation NGO</span></div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" id="testi-prev">←</button>
+      <button class="testi-btn" id="testi-next">→</button>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-band-bg"></div>
+    <div class="cta-band-content reveal-up">
+      <h2>Ready to capture something <em>extraordinary?</em></h2>
+      <a href="contact.html" class="btn btn-primary btn-large">Let's Talk →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Rhys Photography</div>
+        <p>Based in the Wild · Available Worldwide</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Rhys Photography. All rights reserved.</p>
+      <p>Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

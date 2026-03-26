@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="About Rhys — nature and wildlife photographer exploring the world."/>
+  <title>About | Rhys Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      R<span class="logo-dot">·</span>Photography
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><span>01</span>Home</a></li>
+      <li><a href="gallery.html"><span>02</span>Gallery</a></li>
+      <li><a href="about.html" class="active"><span>03</span>About</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='contact.html'">Book a Session</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://i.postimg.cc/Kjd5Jxqk/IMG-6979.webp')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow reveal-up">The Photographer</p>
+      <h1 class="page-hero-title reveal-up">About <em>Rhys</em></h1>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-up">
+        <img src="https://i.postimg.cc/Kjd5Jxqk/IMG-6979.webp" alt="Rhys"/>
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-text reveal-up">
+        <div class="section-label">My Story</div>
+        <h2 class="section-title">Passion for the <em>natural world</em></h2>
+        <p>I'm Rhys — a nature and wildlife photographer with over 4 years of experience exploring the planet's most remote and breathtaking places. From African savannas to Arctic tundras, my lens has followed the wild wherever it leads.</p>
+        <p>I photograph everything — animals, landscapes, macro details, street life, forests, oceans, and skies. My philosophy is simple: every corner of this world deserves to be seen and celebrated.</p>
+        <p>I've traveled to 4+ countries, slept under the stars in Patagonia, waited days for a single shot in the Serengeti, and found magic in the smallest details right in my own backyard.</p>
+        <div class="about-signature">Rhys</div>
+        <a href="contact.html" class="btn btn-primary">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up">
+        <h3 class="stat-number" data-target="4">0</h3><span class="stat-plus">+</span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-item reveal-up">
+        <h3 class="stat-number" data-target="100">0</h3><span class="stat-plus">+</span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item reveal-up">
+        <h3 class="stat-number" data-target="4">0</h3><span class="stat-plus">+</span>
+        <p>Countries Visited</p>
+      </div>
+      <div class="stat-item reveal-up">
+        <h3 class="stat-number" data-target="90">0</h3><span class="stat-plus">+</span>
+        <p>Species Photographed</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gear-section">
+    <div class="section-label reveal-up" style="text-align:center">My Toolkit</div>
+    <h2 class="section-title reveal-up" style="text-align:center">Gear &amp; <em>Expertise</em></h2>
+    <div class="gear-grid">
+      <div class="gear-card reveal-up">
+        <div class="gear-icon">📷</div>
+        <h4>Camera Bodies</h4>
+        <p>Sony A1 · Nikon Z9 · Canon EOS R3</p>
+      </div>
+      <div class="gear-card reveal-up">
+        <div class="gear-icon">🔭</div>
+        <h4>Lenses</h4>
+        <p>600mm f/4 · 100-400mm · 100mm Macro</p>
+      </div>
+      <div class="gear-card reveal-up">
+        <div class="gear-icon">🌿</div>
+        <h4>Field Gear</h4>
+        <p>Gimbal heads · Hides · Underwater housing</p>
+      </div>
+      <div class="gear-card reveal-up">
+        <div class="gear-icon">🎨</div>
+        <h4>Post-Processing</h4>
+        <p>Adobe Lightroom · Photoshop · Capture One</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Rhys Photography</div>
+        <p>Based in the Wild · Available Worldwide</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Rhys Photography. All rights reserved.</p>
+      <p>Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
